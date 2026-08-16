@@ -1,0 +1,13 @@
+{
+  "rewrites": [
+    { "source": "/live.png", "destination": "/api/img" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ]
+}
